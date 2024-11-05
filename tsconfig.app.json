@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": []
+  },
+  "files": ["src/app/app.module.ts"],
+  "include": [
+    "src/**/*.ts",       // Ensure all TypeScript files are included
+    "src/**/*.html",     // Include HTML files if needed
+    "src/**/*.css",      // Include CSS files if needed
+    "src/**/*.scss"      // Include SCSS files if needed
+  ],
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts"       // Exclude test files
+  ]
+}
